@@ -15,6 +15,8 @@ public class Money {
         return currency;
     }
 
+    public abstract String currency();
+
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
@@ -35,6 +37,5 @@ public class Money {
     public String toString() {
         return amount + " " + currency;
     }
-
 
 }
